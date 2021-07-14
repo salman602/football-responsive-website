@@ -9,10 +9,7 @@
     font-family: 'Poppins', sans-serif;
  }
 
- main{
-     width: 1440px;
-     
-     
+ main{ 
  }
  
  .fixed-width{
@@ -149,6 +146,7 @@ header{
      background-color: #FFFFFF;
      width: 1160px;
      margin: auto;
+     margin-bottom: 165px;
  }
  .player{
      width: 330px;
@@ -184,4 +182,134 @@ header{
      color: #6C6C6C;
      line-height: 24px;
      
+ }
+
+ /* Highlights section css starts */
+
+ .highlights-section{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 158px;
+ }
+ .highlights-content{
+     width: 466px;
+     height: 309px;
+ }
+ .highlights-content h2{
+     font-size: 40px;
+     font-weight: 700;
+     margin: 5px 0;
+ }
+ .highlights-content p{
+     font-size: 16px;
+     color: #6C6C6C;
+     line-height: 28px;
+     margin-bottom: -24px;
+ }
+ .highlights-image{}
+ .highlights-image img{
+     width: 567px;
+     height: 427px;
+ }
+
+ /* Article section css starts */
+ .article-section{
+     margin-bottom: 100px;
+ }
+
+ .news{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 26px;
+    grid-row-gap: 26px;
+}
+
+.section-title{
+    font-size: 40px;
+    color: #000000;
+    margin-top: 3px;
+}
+
+.news-item{
+    display: flex;
+}
+.news-item .news-item-thumbnail img{
+    width: 177px;
+    height: 117px;
+
+}
+
+.news-item-info{
+    margin-left: 16px;
+}
+.news-item-title{
+    font-size: 20px;
+
+}
+.news-item-author{
+    font-size: 16px;
+    color: #9F9F9F;
+}
+.news-item-author a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #000000;
+}
+
+
+ /* Partners section starts */
+
+ .partner-section{
+     padding: 5px 0 50px 0;
+     background-color: #f6f6f8;
+ }
+ .partners h2{
+     font-size: 40px;
+     font-weight: 600;
+ }
+ .partners .partners-images{
+     display: flex;
+ }
+ .partners .partners-images img{
+    width: 375px;
+    margin-right: 12px;
+ }
+
+ /* Footer section css starts */
+ .footer-width{
+     width: 485px;
+     margin: auto;
+ }
+ .footer-section{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ .footer-logo{
+    
+ }
+ .footer-logo img{
+    width: 485px;
+    height: 110px;
+
+ }
+ .footer-social-icon{}
+ .footer-social-icon a{
+     text-decoration: none;
+ }
+ .footer-social-icon a .fab{
+     width: 32px;
+     height: 32px;
+     line-height: 32px;
+     border-radius: 50%;
+     margin-right: 14px;
+     background: #969BAB;
+     color: #f1f2f5;
+     text-align: center;
+ }
+ .footer-copyright{}
+ .footer-copyright p{
+     font-size: 18px;
+     color: #000000;
  }
