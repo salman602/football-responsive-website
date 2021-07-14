@@ -3,7 +3,7 @@
  ---------*/
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
- /* Common css or utilities */
+ /* Common or default css or utilities */
 
  body{
     font-family: 'Poppins', sans-serif;
@@ -11,10 +11,13 @@
 
  .container{
      width: 1440px;
-  
+     padding-bottom: 86px;
      background-color: #2D25A0;
  }
- 
+ .fixed-width{
+     width: 1160px;
+     margin: auto;
+ }
  .btn{
     display: flex;
     align-items: center;
@@ -22,14 +25,28 @@
     background-color: #E02C6D;
     margin: 42px 0;
     padding: 10px 24px;
-   
+    width: 123px;
+    height: 44px;
+ }
+ .login-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 123px;
+    height: 44px;
+    
+ }
+
+ .btn:hover .login-btn{
+     cursor: pointer;
+    transform: scale(1.25);
+        
+    transition: transform 2s ease-in;
  }
 
 
  /* Header css */
  .menu{
-     width: 1160px;
-     margin: auto;
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -37,6 +54,7 @@
  .menu .menu-items{}
  .menu .menu-items ul{
      display: flex;
+     margin-left: -30px;
  }
  .menu .menu-items ul li{
      margin: 10px 0;
@@ -52,14 +70,61 @@
  .menu .btn{
      
  }
- .menu .btn .login-icon{
+ .menu .btn .btn-icon{
      width: 24px;
      height: 24px;
      line-height: 24px;
      
  }
- .menu .btn .login-text{
+ .menu .btn .btn-text{
+    color: #FFFFFF;
+    text-decoration: none;
      font-size: 16px;
      font-weight: 400;
     margin-left: 8px;
+ }
+
+
+ /* Banner section css starts */
+
+ .banner{
+     width: 1143px;
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+     
+ }
+ .banner .banner-details{
+     width: 485px;
+     height: 230px;
+ }
+ .banner .banner-details h1{
+     font-size: 64px;
+     color: #FFFFFF;
+     line-height: 50px;
+ }
+
+ .btn .banner-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 168px;
+    height: 44px;
+ }
+
+ .btn .banner-btn a{
+     font-size: 16px;
+     text-decoration: none;
+     color: #FFFFFF;
+ }
+
+ .btn:hover .banner-btn{
+     cursor: pointer;
+    transform: scale(1.25);
+        
+    transition: transform 2s ease-in;
+ }
+ .banner .banner-image img{
+     width: 556px;
+     height: 438px;
  }
