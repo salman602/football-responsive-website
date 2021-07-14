@@ -9,13 +9,12 @@
     font-family: 'Poppins', sans-serif;
  }
 
- main{ 
- }
  
  .fixed-width{
      width: 1160px;
      margin: auto;
  }
+
  .btn{
     display: flex;
     align-items: center;
@@ -26,6 +25,7 @@
     width: 123px;
     height: 44px;
  }
+
  .login-btn{
     display: flex;
     align-items: center;
@@ -36,18 +36,20 @@
  }
 
  .btn:hover .login-btn{
-     cursor: pointer;
+    cursor: pointer;
     transform: scale(1.25);
         
     transition: transform 2s ease-in;
  }
 
 
- /* Header css */
-header{
+ /* Header section css */
+
+
+ header{
     background-color: #2D25A0;
-    padding-bottom: 86px;
-    margin-bottom: 70px;
+    
+    
 }
 
  .menu{
@@ -55,15 +57,17 @@ header{
      justify-content: space-between;
      align-items: center;
  }
- .menu .menu-items{}
+ 
  .menu .menu-items ul{
      display: flex;
      margin-left: -30px;
  }
+
  .menu .menu-items ul li{
      margin: 10px 0;
      list-style: none;
  }
+
  .menu .menu-items ul li a{
     margin-right: 36px;
      color: #FFFFFF;
@@ -71,15 +75,14 @@ header{
      font-size: 16px;
      font-weight: 400;
  }
- .menu .btn{
-     
- }
+ 
  .menu .btn .btn-icon{
      width: 24px;
      height: 24px;
      line-height: 24px;
      
  }
+
  .menu .btn .btn-text{
     color: #FFFFFF;
     text-decoration: none;
@@ -91,17 +94,25 @@ header{
 
  /* Banner section css starts */
 
- .banner{
-     width: 1143px;
-     margin: auto;
-     display: flex;
-     justify-content: space-between;
+ 
+
+ .banner-section{
      
+     background-color: #2D25A0;
+     padding-bottom: 86px;
+     margin-bottom: 100px;
  }
+
+ .banner{
+    display: flex;
+     justify-content: space-between;
+ }
+
  .banner .banner-details{
      width: 485px;
      height: 230px;
  }
+
  .banner .banner-details h1{
      font-size: 64px;
      color: #FFFFFF;
@@ -128,6 +139,7 @@ header{
         
     transition: transform 2s ease-in;
  }
+
  .banner .banner-image img{
      width: 556px;
      height: 438px;
@@ -135,9 +147,6 @@ header{
 
  /* Player section css starts */
 
- .player-section{
-     
- }
 
  .players{
      display: grid;
@@ -148,6 +157,7 @@ header{
      margin: auto;
      margin-bottom: 165px;
  }
+
  .player{
      width: 330px;
      height: 474px;
@@ -156,26 +166,30 @@ header{
      box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
      box-sizing: border-box;
  }
+
  .player .player-image{
      text-align: center;
  }
+
  .player .player-image img{
      width: 300px;
      height: 256px;
      
  }
+
  .player .player-profile{
     width: 300px;
     height: 256px;
     margin: auto;
  }
- .player .player-profile{}
+ 
  .player .player-profile .player-name{
      font-size: 28px;
      font-weight: 600;
      margin: 10px 0;
      color: #18191F;
  }
+
  .player .player-profile .player-details{
      font-size: 16px;
      font-weight: 400;
@@ -192,28 +206,32 @@ header{
      align-items: center;
      margin-bottom: 158px;
  }
+
  .highlights-content{
      width: 466px;
      height: 309px;
  }
+
  .highlights-content h2{
      font-size: 40px;
      font-weight: 700;
      margin: 5px 0;
  }
+
  .highlights-content p{
      font-size: 16px;
      color: #6C6C6C;
      line-height: 28px;
      margin-bottom: -24px;
  }
- .highlights-image{}
+ 
  .highlights-image img{
      width: 567px;
      height: 427px;
  }
 
  /* Article section css starts */
+
  .article-section{
      margin-bottom: 100px;
  }
@@ -263,6 +281,7 @@ header{
  .partner-section{
      padding: 5px 0 50px 0;
      background-color: #f6f6f8;
+     margin-bottom: 20px;
  }
  .partners h2{
      font-size: 40px;
@@ -277,6 +296,7 @@ header{
  }
 
  /* Footer section css starts */
+
  .footer-width{
      width: 485px;
      margin: auto;
@@ -286,18 +306,17 @@ header{
      flex-direction: column;
      align-items: center;
  }
- .footer-logo{
-    
- }
+ 
  .footer-logo img{
     width: 485px;
     height: 110px;
 
  }
- .footer-social-icon{}
+ 
  .footer-social-icon a{
      text-decoration: none;
  }
+
  .footer-social-icon a .fab{
      width: 32px;
      height: 32px;
@@ -308,8 +327,141 @@ header{
      color: #f1f2f5;
      text-align: center;
  }
- .footer-copyright{}
+ 
  .footer-copyright p{
      font-size: 18px;
      color: #000000;
  }
+
+
+ /*----------------------
+  Responsive css starts
+  -------------------------- */
+ /* Responsive css for Mobile device (iphone-X) only */
+
+ @media only screen and (max-width: 668px) {
+     
+     /* I am facing problem in header section responsive . this was an optional section thats why i hide it in responsive css  */
+
+    /* header section responsive css  */
+    
+    header{
+        display: none;
+    }
+
+    /* banner section responsive css  */
+    .banner-section{
+        width: 360px;
+        height: 695px;
+        background: #2D25A0;
+    }
+
+    .banner{
+        flex-direction: column;
+        width: 330px;
+        height: 260px;
+    }
+
+    .banner .banner-details h1{
+        font-size: 36px;
+        line-height: 30px;
+    }
+
+    .banner-details{
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+    }
+
+    .btn .banner-btn{
+        width: 120px;
+        height: 24px; 
+     }
+    
+    
+    .banner .banner-image img{
+        width: 330px;
+        height: 260px;
+    }
+
+    /* Players section responsive css */
+
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+    }
+
+    .player{
+        margin: 0 15px;
+    }
+    
+
+    /* Highlight section responsive css */
+
+    .fixed-width{
+        width: 330px;
+    }
+
+    .highlights-section{
+        flex-direction: column;
+    }
+
+    .highlights-content{
+        width: 329px;
+        height: 400px;
+        margin-top: 40px;
+    }
+
+    .highlights-content h2{
+        font-size: 30px;
+    }
+    
+    .highlights-image img{
+        width: 328px;
+        height: 248px;
+    }
+
+    /* Article section responsive css */
+
+    .news{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .news-item{
+        flex-direction: column;
+    }
+
+    .news-item-info{
+        margin-left: 0;
+    }
+
+    /* Partner section responsive css */
+
+    .fixed-width{
+        width: 330px;
+    }
+
+    .partners-images{
+        flex-direction: column;
+    }
+
+    .partners .partners-images img{
+        width: 325px;
+        padding-bottom: 20px;
+     }
+
+     /* footer section responsive css  */
+
+    .footer-width{
+        width: 330px;
+        margin: auto;
+    }
+
+    .footer-section{
+        align-items: center;
+    }
+
+    .footer-logo img{
+        width: 275px;
+     }
+
+}
